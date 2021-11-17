@@ -15,8 +15,10 @@ plain text
   - char - single character - then use single quotes
 numbers
   - int - then no quoets needed
-  - float, double, decimal (from least accurate to most accurate - for most use cases double is fine. if need to be extremely accurate, like this money, then use decimal)
+  - float, double, decimal (from least accurate to most accurate - for most use cases double is fine. if need to be extremely accurate, like with money, then use decimal)
 boolean
+
+  - can convert using Convert.ToInt or Convert.ToDouble
 
 - WORKING WITH STRINGS
     - concatenating
@@ -35,5 +37,53 @@ boolean
 
 - Building a Mad Libs Game
 
---new info!
-left off 1:15:28
+- ARRAYS
+  - all elements need to be of same type
+  - 2d arrays -> int [,]
+    - if need 3d -> int [,,]
+
+- METHODS
+  
+- IF statements
+    -- operators: && and || and negation operator (!)
+    -- comparisons < and > and <= and == 
+
+- SWITCH statements
+
+- WHILE / DO LOOPS
+
+- FOR LOOPS
+
+- EXCEPTION HANDLING
+  - try/catch
+
+-CLASSES & OBJECTS
+  - allow you to create custom data types
+    - class = specification for new data type
+
+    rt click on program (Giraffe) in sidebar and click add new item then select class and name it 'Book'
+      - then in that file, within class Book brackets, give it attributes:
+        public string title;
+        public string author;
+        public int pages;
+
+    - object == instance of class
+  - CONSTRUCTORS = method that gets called whenever we create object of that class
+    public NameOfClass(){}
+    - can have multiple constructors
+  - OBJECT METHODS
+  - GETTERS & SETTERS - 2 types of methods that control access to attributes of the class - lets you make data more secure, and to define what data is valid vs. invalid i.e. enforcing certain data
+    - Ex: how to enforce that movie ratings are valid
+      1. list the rating attribute as private
+      2. define getters/setters
+      3. adjust attr name to match getter/setter
+  - STATIC CLASS ATTRIBUTES
+    - belongs to class, not object
+    - not unique to each object, rather common across all objects
+    - inaccessible to objects by itself - need to access via separate (public) method
+  - STATIC METHODS AND CLASSES
+    - i.e. Math.Sqrt(81)
+    - Math is a static class and so we cant create an instance of Math
+      i.e. it's coded under the hood as static class Math{}
+  - INHERITANCE
+    - use virtual (super-class)+ override (sub-class) keywords to enable overriding polymorphism
